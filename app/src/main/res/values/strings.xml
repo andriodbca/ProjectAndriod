@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GDC Pulwama App</string>
+    <string name="msgDistrict">Please select your district</string>
+    <string name="name_spinner_page">Spinner Demo:</string>
+
+    <string-array name="arrayDistricts">
+        <item>Anantnag</item>
+        <item>Baramulla</item>
+        <item>Budgam</item>
+        <item>Pulwama</item>
+        <item>Shopian</item>
+        <item>Kulgam</item>
+        <item>Srinagar</item>
+        <item>Bandipora</item>
+    </string-array>
+</resources>
