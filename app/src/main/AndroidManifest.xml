@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppFirst">
         <activity
+            android:name=".DbExample2"
+            android:exported="false" />
+        <activity
             android:name=".DbExample1"
             android:exported="false" />
         <activity

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnDateTime;
     Button btnDemoRawFiles;
     Button btnDBExample1;
+    Button btnDBExample2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDBExample1 = findViewById(R.id.btnDBExample1);
         btnDBExample1.setOnClickListener(this);
 
-
+        btnDBExample2 = findViewById(R.id.btnDBExample2);
+        btnDBExample2.setOnClickListener(this);
     }//end onCreate()
 
 
@@ -94,7 +96,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent i = new Intent(this, DbExample1.class);
             startActivity(i);
         }
-
+        else if( v == btnDBExample2)
+        {
+            Intent i = new Intent(this, DbExample2.class);
+            startActivity(i);
+        }
 
     } // end onClick()
 

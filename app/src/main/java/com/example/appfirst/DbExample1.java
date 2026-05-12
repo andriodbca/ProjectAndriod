@@ -51,6 +51,28 @@ public class DbExample1 extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onClick(View v)
     {
+        String name = txtN.getText().toString();
+        String email = txtE.getText().toString();
+        String pass = txtP.getText().toString();
+
+        // "INSERT INTO Users(Name, Email, Password) VALUES(name, email, pass)";
+        String query =  "INSERT INTO Users(Name, Email, Password) VALUES('" + name + "', '" + email + "', '" + pass + "')";
+        // "INSERT INTO Users(Name, Email, Password) VALUES('john smith', 'johns123@gmail.com', 'pulwama123')";
+
+        try
+        {
+            mydb.execSQL(query);
+            Toast.makeText(this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
+            txtN.setText("");
+            txtE.setText("");
+            txtP.setText("");
+        }
+        catch(SQLException e)
+        {
+            lblMsg.setText("Exception. Failed to create user\n" + e.toString());
+        }
+
+
 
     } // end fn
 }

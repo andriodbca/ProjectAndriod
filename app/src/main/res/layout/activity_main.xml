@@ -116,6 +116,13 @@
         android:id="@+id/btnDBExample1"
         android:text="Db Demo 1"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDBExample2"
+        android:text="Db Demo 2"
+        />
 </LinearLayout>
 
 </ScrollView>
